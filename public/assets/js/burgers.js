@@ -1,5 +1,5 @@
 $(function() {
-    $(".change-devour").on("click", function(event) {
+    $(".change-devoured").on("click", function(event) {
         var id = $(this).data("id");
         var newDevour = $(this).data("newdevoured");
 
@@ -7,17 +7,17 @@ $(function() {
             devoured: newDevour
         };
 
-        $.ajax("api/burgers" + id, {
+        $.ajax("api/burgers/" + id, {
             type: "PUT",
             data: newDevourState
         }).then(
             function() {
                 console.log("changed devour to", newDevour);
-
                 location.reload();
             }
         );
     });
+
 
     $(".create-form").on("submit", function(event) {
         // Make sure to preventDefault on a submit event.

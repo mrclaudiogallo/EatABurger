@@ -16,11 +16,11 @@ router.get("/", function(req, res) {
 
 router.post("/api/burgers", function(req, res) {
     burger.insertOne(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
-        res.json({ id: result.inserId });
+        res.json({ id: result.insertId });
     });
 });
 
-router.put("api/burgers/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);
