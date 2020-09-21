@@ -1,3 +1,19 @@
 body {
-    background-color: yellow;
+    background-color: dodgerblue;
+    font-family: 'Noto Sans JP', sans-serif;
 };
+
+.firstBox {
+    border-top: solid 3px black;
+    border-right: solid 3px black;
+    margin-top: 100px;
+};
+
+.secondBox {
+    border-top: solid 3px black;
+    border-left: solid 3px black;
+};
+
+.change-devoured {
+    margin-top: 50px;
+}

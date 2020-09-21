@@ -1,5 +1,5 @@
 <h1>Burgers to devour</h1>
-<ul>
+<ul class="firstBox">
     {{#each burgers}}
         {{#unless devoured}}
         {{> burger/burger-block devoured=true}}
@@ -7,7 +7,7 @@
     {{/each}}
 </ul>
 <h1>You ate all these burgers</h1>
-<ul>
+<ul class="secondBox">
     {{#each burgers}}
         {{#if devoured}}
         {{> burger/burger-block devoured=false}}
@@ -21,6 +21,6 @@
         <label for="newBurger">Burger:</label>
         <input type="text" id="newBurger" name="burger_name">
     </div>
-    <br><br>
+    <br>
     <button type="submit">Add Burger</button>
 </form>
