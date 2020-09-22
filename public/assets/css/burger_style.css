@@ -3,10 +3,12 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 };
 
+.container {
+    max-width: 750px;
+}
+
 .firstBox {
-    border-top: solid 3px black;
-    border-right: solid 3px black;
-    margin-top: 100px;
+    margin-top: 50px;
 };
 
 .secondBox {
@@ -16,4 +18,4 @@ body {
 
 .change-devoured {
     margin-top: 50px;
-}
+};
